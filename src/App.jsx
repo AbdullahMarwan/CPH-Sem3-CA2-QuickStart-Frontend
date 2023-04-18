@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react"
 import facade from "./apiFacade";
-import LogIn from ".components/LoginForm";
-import LoggedIn from ".components/LoggedIn";
+import LogIn from "./components/LoginForm";
+import LoggedIn from "./components/LoggedIn";
 
 
 function App() {
