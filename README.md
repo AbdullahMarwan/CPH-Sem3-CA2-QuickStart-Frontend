@@ -1,1 +1,0 @@
-# CPH-Sem3-CA2-QuickStart-Frontend
