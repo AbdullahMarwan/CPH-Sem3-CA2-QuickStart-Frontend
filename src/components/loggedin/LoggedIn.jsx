@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import facade from "../apiFacade";
-function LoggedIn({user, logout}){
+import React, { useState,useEffect } from "react"
+import facade from "../../apiFacade.js";
+function LoggedIn({user}){
     const [dataFromServer, setDataFromServer] = useState("Loading...")
     useEffect(() => { 
       const url = user.roles.split(',').includes('user') ? '/api/info/user' : '/api/info/admin';
@@ -11,8 +11,8 @@ function LoggedIn({user, logout}){
   
     return (
       <div>
-        {/*<h3>{dataFromServer}</h3>*/}
-        <span>{user.username} with roles: {user.roles}<button onClick={logout}>Logout</button></span>
+        <label>{dataFromServer}</label>
+        {/*<h4>{user.username} with roles: {user.roles}</h4>*/}
       </div>
     )
   }
